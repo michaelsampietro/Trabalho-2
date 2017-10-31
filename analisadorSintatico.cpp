@@ -11,11 +11,13 @@
 #include <list>
 #include <algorithm>
 #include <map>
+#include <stack>
 
 using namespace std;
 
 #define BRANCO -1000
 #define Acc 1000
+#define $ 500
 
 /* Shift define */
 #define S2 2
@@ -368,6 +370,38 @@ producoes[29].numero 			= 30;
 producoes[29].lado_esquerdo 	= "A";
 producoes[29].lado_direito 		= "fim";
 producoes[29].tamanho_direito 	= 1;
+
+
+stack <int> pilha;
+pilha.push(0);
+
+// w = id + id$
+void analiseSintaticaLR () {
+	// a chama o código anterior
+	int s, aux, comprimento, t;
+	while (1) {
+		s = pilha.top();
+
+		if ( tabelaShiftReduce[s][a] >= 0 && tabelaShiftReduce[s][a] <= 58) {
+			pilha.push(tabelaShiftReduce[s][a]);
+			// a chama o codigo anterior dnv
+		} else if (tabelaShiftReduce[s][a] < 0 && tabelaShiftReduce[s][a] >= -30 ) {
+			aux = (tabelaShiftReduce[s][a] * -1) - 1;
+			comprimento = producoes[aux].tamanho_direito;
+			while (comprimento > 0) {
+				pilha.pop();
+				comprimento--;
+			}
+			t = pilha.top();
+			// Adicinar um campo na struct de PRODUCOES contendo a coluna do lado esquerdo na tabela shift-red
+			cout << producoes[aux].lado_esquerdo << " -> " << producoes[aux].lado_direito << endl;
+		} else if (tabelaShiftReduce[s][a] = Acc) {
+			break; // A análise terminou!
+		} else {
+			// Criar rotina de recuperacao de erro e chamar aqui!
+		}
+	}
+}
 
 int main(int argc, char const *argv[]) {
     for (int i = 0; i < 59; i ++ ) {
