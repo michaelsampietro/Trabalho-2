@@ -303,11 +303,71 @@ producoes[18].lado_esquerdo = "LD";
 producoes[18].lado_direito = "OPRD";
 producoes[18].tamanho_direito = 1;
 
-/* 20 LD -> OPRD opm OPRD */
-producoes[17].numero = 18;
-producoes[17].lado_esquerdo = "LD";
-producoes[17].lado_direito = "OPRD opm OPRD";
-producoes[17].tamanho_direito = 3;
+/* 20 OPRD -> id */
+producoes[19].numero = 20;
+producoes[19].lado_esquerdo = "OPRD";
+producoes[19].lado_direito = "id";
+producoes[19].tamanho_direito = 1;
+
+/* 21 OPRD -> num */
+producoes[20].numero = 21;
+producoes[20].lado_esquerdo = "OPRD";
+producoes[20].lado_direito = "num";
+producoes[20].tamanho_direito = 1;
+
+/* 22 A -> COND A */
+producoes[21].numero = 22;
+producoes[21].lado_esquerdo = "A";
+producoes[21].lado_direito = "COND A";
+producoes[21].tamanho_direito = 2;
+
+/* 23 COND -> CABEÇALHO CORPO */
+producoes[22].numero = 23;
+producoes[22].lado_esquerdo = "COND";
+producoes[22].lado_direito = "CABEÇALHO CORPO";
+producoes[22].tamanho_direito = 2;
+
+/* 24 CABEÇALHO -> se (EXP_R) então */
+producoes[23].numero = 24;
+producoes[23].lado_esquerdo = "CABEÇALHO";
+producoes[23].lado_direito = "se (EXP_R) então";
+producoes[23].tamanho_direito = 5;
+
+/* 25 EXP_R -> OPRD opr OPRD */
+producoes[24].numero = 25;
+producoes[24].lado_esquerdo = "EXP_R";
+producoes[24].lado_direito = "OPRD opr OPRD";
+producoes[24].tamanho_direito = 3;
+
+/* 26 CORPO -> ES CORPO */
+producoes[25].numero 			= 26;
+producoes[25].lado_esquerdo 	= "CORPO";
+producoes[25].lado_direito 		= "ES CORPO";
+producoes[25].tamanho_direito 	= 2;
+
+/* 27 CORPO -> CMD CORPO */
+producoes[26].numero 			= 27;
+producoes[26].lado_esquerdo 	= "CORPO";
+producoes[26].lado_direito 		= "CMD CORPO";
+producoes[26].tamanho_direito 	= 2;
+
+/* 28 CORPO -> COND CORPO */
+producoes[27].numero 			= 28;
+producoes[27].lado_esquerdo 	= "CORPO";
+producoes[27].lado_direito 		= "COND CORPO";
+producoes[27].tamanho_direito 	= 2;
+
+/* 29 CORPO -> fimse */
+producoes[28].numero 			= 29;
+producoes[28].lado_esquerdo 	= "CORPO";
+producoes[28].lado_direito 		= "fimse";
+producoes[28].tamanho_direito 	= 1;
+
+/* 30 A -> fim */
+producoes[29].numero 			= 30;
+producoes[29].lado_esquerdo 	= "A";
+producoes[29].lado_direito 		= "fim";
+producoes[29].tamanho_direito 	= 1;
 
 int main(int argc, char const *argv[]) {
     
