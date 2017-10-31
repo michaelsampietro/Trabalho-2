@@ -190,154 +190,154 @@ struct producao {
 producao producoes[30];
 
 /* 1 P' -> P */
-producoes[0].numero = 1;
-producoes[0].lado_esquerdo = "P\'";
-producoes[0].lado_direito = "P";
-producoes[0].tamanho_direito = 1;
+producoes[0].numero 			= 1;
+producoes[0].lado_esquerdo 		= "P\'";
+producoes[0].lado_direito 		= "P";
+producoes[0].tamanho_direito 	= 1;
 
 /* 2 P -> inicio V A */
-producoes[1].numero = 2;
-producoes[1].lado_esquerdo = "P";
-producoes[1].lado_direito = "inicio V A";
-producoes[1].tamanho_direito = 3;
+producoes[1].numero 			= 2;
+producoes[1].lado_esquerdo 		= "P";
+producoes[1].lado_direito 		= "inicio V A";
+producoes[1].tamanho_direito 	= 3;
 
 /* 3 V -> varinicio LV */
-producoes[2].numero = 3;
-producoes[2].lado_esquerdo = "V";
-producoes[2].lado_direito = "varinicio LV";
-producoes[2].tamanho_direito = 2;
+producoes[2].numero 			= 3;
+producoes[2].lado_esquerdo 		= "V";
+producoes[2].lado_direito 		= "varinicio LV";
+producoes[2].tamanho_direito 	= 2;
 
 /* 4 LV -> D LV */
-producoes[3].numero = 4;
-producoes[3].lado_esquerdo = "LV";
-producoes[3].lado_direito = "D LV";
-producoes[3].tamanho_direito = 2;
+producoes[3].numero 			= 4;
+producoes[3].lado_esquerdo 		= "LV";
+producoes[3].lado_direito 		= "D LV";
+producoes[3].tamanho_direito 	= 2;
 
 /* 5 LV -> varfim; */
-producoes[4].numero = 5;
-producoes[4].lado_esquerdo = "LV";
-producoes[4].lado_direito = "varfim;";
-producoes[4].tamanho_direito = 2;
+producoes[4].numero 			= 5;
+producoes[4].lado_esquerdo 		= "LV";
+producoes[4].lado_direito 		= "varfim;";
+producoes[4].tamanho_direito 	= 2;
 
 /* 6 D -> id TIPO;*/
-producoes[5].numero = 6;
-producoes[5].lado_esquerdo = "D";
-producoes[5].lado_direito = "id TIPO;";
-producoes[5].tamanho_direito = 3;
+producoes[5].numero 			= 6;
+producoes[5].lado_esquerdo 		= "D";
+producoes[5].lado_direito 		= "id TIPO;";
+producoes[5].tamanho_direito 	= 3;
 
 /* 7 TIPO -> inteiro */
-producoes[6].numero = 7;
-producoes[6].lado_esquerdo = "TIPO";
-producoes[6].lado_direito = "inteiro";
-producoes[6].tamanho_direito = 1;
+producoes[6].numero 			= 7;
+producoes[6].lado_esquerdo 		= "TIPO";
+producoes[6].lado_direito 		= "inteiro";
+producoes[6].tamanho_direito 	= 1;
 
 /* 8 TIPO -> real */
-producoes[7].numero = 8;
-producoes[7].lado_esquerdo = "TIPO";
-producoes[7].lado_direito = "real";
-producoes[7].tamanho_direito = 3;
+producoes[7].numero 			= 8;
+producoes[7].lado_esquerdo 		= "TIPO";
+producoes[7].lado_direito 		= "real";
+producoes[7].tamanho_direito 	= 3;
 
 /* 9 TIPO -> literal */
-producoes[8].numero = 9;
-producoes[8].lado_esquerdo = "TIPO";
-producoes[8].lado_direito = "literal";
-producoes[8].tamanho_direito = 1;
+producoes[8].numero 			= 9;
+producoes[8].lado_esquerdo 		= "TIPO";
+producoes[8].lado_direito 		= "literal";
+producoes[8].tamanho_direito 	= 1;
 
 /* 10 A -> ES A */
-producoes[9].numero = 10;
-producoes[9].lado_esquerdo = "A";
-producoes[9].lado_direito = "ES A";
-producoes[9].tamanho_direito = 2;
+producoes[9].numero 			= 10;
+producoes[9].lado_esquerdo 		= "A";
+producoes[9].lado_direito 		= "ES A";
+producoes[9].tamanho_direito 	= 2;
 
 /* 11 ES -> leia id; */
-producoes[10].numero = 11;
-producoes[10].lado_esquerdo = "ES";
-producoes[10].lado_direito = "leia id;";
-producoes[10].tamanho_direito = 3;
+producoes[10].numero 			= 11;
+producoes[10].lado_esquerdo 	= "ES";
+producoes[10].lado_direito 		= "leia id;";
+producoes[10].tamanho_direito 	= 3;
 
 /* 12 ES -> escreva ARG; */
-producoes[11].numero = 12;
-producoes[11].lado_esquerdo = "ES";
-producoes[11].lado_direito = "escreva ARG;";
-producoes[11].tamanho_direito = 3;
+producoes[11].numero 			= 12;
+producoes[11].lado_esquerdo 	= "ES";
+producoes[11].lado_direito 		= "escreva ARG;";
+producoes[11].tamanho_direito 	= 3;
 
 /* 13 ARG -> literal */
-producoes[12].numero = 13;
-producoes[12].lado_esquerdo = "ARG";
-producoes[12].lado_direito = "literal";
-producoes[12].tamanho_direito = 1;
+producoes[12].numero 			= 13;
+producoes[12].lado_esquerdo 	= "ARG";
+producoes[12].lado_direito 		= "literal";
+producoes[12].tamanho_direito 	= 1;
 
 /* 14 ARG -> num */
-producoes[13].numero = 14;
-producoes[13].lado_esquerdo = "ARG";
-producoes[13].lado_direito = "num";
-producoes[13].tamanho_direito = 1;
+producoes[13].numero 			= 14;
+producoes[13].lado_esquerdo 	= "ARG";
+producoes[13].lado_direito 		= "num";
+producoes[13].tamanho_direito 	= 1;
 
 /* 15 ARG -> id */
-producoes[14].numero = 15;
-producoes[14].lado_esquerdo = "ARG";
-producoes[14].lado_direito = "id";
-producoes[14].tamanho_direito = 1;
+producoes[14].numero 			= 15;
+producoes[14].lado_esquerdo 	= "ARG";
+producoes[14].lado_direito 		= "id";
+producoes[14].tamanho_direito 	= 1;
 
 /* 16 A -> CMD A */
-producoes[15].numero = 16;
-producoes[15].lado_esquerdo = "A";
-producoes[15].lado_direito = "CMD A";
-producoes[15].tamanho_direito = 2;
+producoes[15].numero 			= 16;
+producoes[15].lado_esquerdo 	= "A";
+producoes[15].lado_direito 		= "CMD A";
+producoes[15].tamanho_direito 	= 2;
 
 /* 17 CMD -> id rcb LD; */
-producoes[16].numero = 17;
-producoes[16].lado_esquerdo = "CMD";
-producoes[16].lado_direito = "id rcb LD;";
-producoes[16].tamanho_direito = 4;
+producoes[16].numero 			= 17;
+producoes[16].lado_esquerdo 	= "CMD";
+producoes[16].lado_direito 		= "id rcb LD;";
+producoes[16].tamanho_direito 	= 4;
 
 /* 18 LD -> OPRD opm OPRD */
-producoes[17].numero = 18;
-producoes[17].lado_esquerdo = "LD";
-producoes[17].lado_direito = "OPRD opm OPRD";
-producoes[17].tamanho_direito = 3;
+producoes[17].numero 			= 18;
+producoes[17].lado_esquerdo 	= "LD";
+producoes[17].lado_direito 		= "OPRD opm OPRD";
+producoes[17].tamanho_direito 	= 3;
 
 /* 19 LD -> OPRD */
-producoes[18].numero = 19;
-producoes[18].lado_esquerdo = "LD";
-producoes[18].lado_direito = "OPRD";
-producoes[18].tamanho_direito = 1;
+producoes[18].numero 			= 19;
+producoes[18].lado_esquerdo 	= "LD";
+producoes[18].lado_direito 		= "OPRD";
+producoes[18].tamanho_direito 	= 1;
 
 /* 20 OPRD -> id */
-producoes[19].numero = 20;
-producoes[19].lado_esquerdo = "OPRD";
-producoes[19].lado_direito = "id";
-producoes[19].tamanho_direito = 1;
+producoes[19].numero 			= 20;
+producoes[19].lado_esquerdo 	= "OPRD";
+producoes[19].lado_direito 		= "id";
+producoes[19].tamanho_direito 	= 1;
 
 /* 21 OPRD -> num */
-producoes[20].numero = 21;
-producoes[20].lado_esquerdo = "OPRD";
-producoes[20].lado_direito = "num";
-producoes[20].tamanho_direito = 1;
+producoes[20].numero 			= 21;
+producoes[20].lado_esquerdo 	= "OPRD";
+producoes[20].lado_direito 		= "num";
+producoes[20].tamanho_direito 	= 1;
 
 /* 22 A -> COND A */
-producoes[21].numero = 22;
-producoes[21].lado_esquerdo = "A";
-producoes[21].lado_direito = "COND A";
-producoes[21].tamanho_direito = 2;
+producoes[21].numero 			= 22;
+producoes[21].lado_esquerdo 	= "A";
+producoes[21].lado_direito 		= "COND A";
+producoes[21].tamanho_direito 	= 2;
 
 /* 23 COND -> CABEÇALHO CORPO */
-producoes[22].numero = 23;
-producoes[22].lado_esquerdo = "COND";
-producoes[22].lado_direito = "CABEÇALHO CORPO";
-producoes[22].tamanho_direito = 2;
+producoes[22].numero 			= 23;
+producoes[22].lado_esquerdo 	= "COND";
+producoes[22].lado_direito 		= "CABEÇALHO CORPO";
+producoes[22].tamanho_direito 	= 2;
 
 /* 24 CABEÇALHO -> se (EXP_R) então */
-producoes[23].numero = 24;
-producoes[23].lado_esquerdo = "CABEÇALHO";
-producoes[23].lado_direito = "se (EXP_R) então";
-producoes[23].tamanho_direito = 5;
+producoes[23].numero 			= 24;
+producoes[23].lado_esquerdo 	= "CABEÇALHO";
+producoes[23].lado_direito 		= "se (EXP_R) então";
+producoes[23].tamanho_direito 	= 5;
 
 /* 25 EXP_R -> OPRD opr OPRD */
-producoes[24].numero = 25;
-producoes[24].lado_esquerdo = "EXP_R";
-producoes[24].lado_direito = "OPRD opr OPRD";
-producoes[24].tamanho_direito = 3;
+producoes[24].numero 			= 25;
+producoes[24].lado_esquerdo 	= "EXP_R";
+producoes[24].lado_direito 		= "OPRD opr OPRD";
+producoes[24].tamanho_direito 	= 3;
 
 /* 26 CORPO -> ES CORPO */
 producoes[25].numero 			= 26;
@@ -370,15 +370,12 @@ producoes[29].lado_direito 		= "fim";
 producoes[29].tamanho_direito 	= 1;
 
 int main(int argc, char const *argv[]) {
-    
-
     for (int i = 0; i < 59; i ++ ) {
         cout << "\n";
         for (int j = 0; j < 38; j++ ) {
             cout << tabelaShiftReduce[i][j] << "\t";
         }
-    }
-
-
+	}
+	
     return 0;
 }
