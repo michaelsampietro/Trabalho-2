@@ -303,6 +303,12 @@ producoes[18].lado_esquerdo = "LD";
 producoes[18].lado_direito = "OPRD";
 producoes[18].tamanho_direito = 1;
 
+/* 20 LD -> OPRD opm OPRD */
+producoes[17].numero = 18;
+producoes[17].lado_esquerdo = "LD";
+producoes[17].lado_direito = "OPRD opm OPRD";
+producoes[17].tamanho_direito = 3;
+
 int main(int argc, char const *argv[]) {
     
 
